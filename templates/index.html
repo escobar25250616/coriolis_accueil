@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Coriolis - Forfait Mobile</title>
-  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
 
   <main>
     <section class="hero">
-      <img src="static/img/banner.png" alt="Bannière forfait" class="hero-image">
+      <img src="{{ url_for('static', filename='img/banner.png') }}" alt="Bannière forfait" class="hero-image">
     </section>
 
     <section class="intro">
